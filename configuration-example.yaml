@@ -1,0 +1,4 @@
+# Dodaj do /config/configuration.yaml.
+# Jeżeli shell_command: już istnieje, dodaj tylko wiersz dreame_panel_update.
+shell_command:
+  dreame_panel_update: "python3 /config/dreame/update_dreame.py"
