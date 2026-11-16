@@ -1,0 +1,11 @@
+alias: Dreame - automatyczne aktualizacje panelu
+id: dreame_panel_auto_update
+mode: single
+triggers:
+  - trigger: homeassistant
+    event: start
+  - trigger: time_pattern
+    hours: "/6"
+    minutes: "5"
+actions:
+  - action: shell_command.dreame_panel_update
